@@ -5,6 +5,7 @@ import { HiTrendingDown, HiTrendingUp } from "react-icons/hi";
 import data from "../assets/data.json";
 import { BarChart, DoughnutChart } from "../components/Charts";
 import { BiMaleFemale } from "react-icons/bi";
+import DashboardTable from "../components/DashboardTable";
 const userImg =
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgVhUdGO4v8sY0cjCDhWv2NuHrY32aWEruXg&s";
 function dashboard() {
@@ -85,6 +86,7 @@ function dashboard() {
             </p>
           </div>
           {/* table */}
+          <DashboardTable data={data.transaction} />
         </section>
       </main>
     </div>
