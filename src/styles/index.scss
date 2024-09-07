@@ -1,6 +1,7 @@
 // @use "mixin";    //use tb use krna chiye jb pta ho ki 2 file m same fn h and vo conflict kr skte h
 @import "mixin";
 @import "dashboard";
+@import "products";
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -125,6 +126,23 @@ a {
       &:last-child {
         border-right: none;
       }
+    }
+  }
+}
+.table-pagination{
+  @include flex;
+  padding: 2rem;
+  >button{
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(0, 115, 225);
+    color: white;
+    &:disabled{
+      background-color: rgba(0, 115, 225, 0.1);
+      cursor: not-allowed;
     }
   }
 }

@@ -1,8 +1,18 @@
 import { IconType } from "react-icons";
 import { AiFillFileText } from "react-icons/ai";
-import { FaChartBar, FaChartLine, FaChartPie, FaGamepad, FaStopwatch } from "react-icons/fa";
+import {
+  FaChartBar,
+  FaChartLine,
+  FaChartPie,
+  FaGamepad,
+  FaStopwatch,
+} from "react-icons/fa";
 import { IoIosPeople } from "react-icons/io";
-import { RiCoupon3Fill, RiDashboardFill, RiShoppingBag3Fill } from "react-icons/ri";
+import {
+  RiCoupon3Fill,
+  RiDashboardFill,
+  RiShoppingBag3Fill,
+} from "react-icons/ri";
 import { Link, Location, useLocation } from "react-router-dom";
 
 function AdminSidebar() {
@@ -72,12 +82,6 @@ const DivTwo = ({ location }: { location: Location }) => (
         Icon={FaChartLine}
         location={location}
       />
-      <Li
-        url="/admin/transaction"
-        text="Transaction"
-        Icon={AiFillFileText}
-        location={location}
-      />
     </ul>
   </div>
 );
@@ -102,12 +106,6 @@ const DivThree = ({ location }: { location: Location }) => (
         url="/admin/app/toss"
         text="Toss"
         Icon={FaGamepad}
-        location={location}
-      />
-      <Li
-        url="/admin/transaction"
-        text="Transaction"
-        Icon={AiFillFileText}
         location={location}
       />
     </ul>

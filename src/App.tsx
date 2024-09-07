@@ -7,6 +7,13 @@ const Dashboard = lazy(() => import("./pages/Dashboard"));
 const Products = lazy(() => import("./pages/Products"));
 const Customers = lazy(() => import("./pages/Customers"));
 const Transaction = lazy(() => import("./pages/Transaction"));
+const NewProduct = lazy(() => import("./pages/management/NewProduct"));
+const ProductManagement = lazy(
+  () => import("./pages/management/ProductManagement")
+);
+const TransactionManagement = lazy(
+  () => import("./pages/management/TransactionManagement")
+);
 
 function App() {
   return (
@@ -22,6 +29,10 @@ function App() {
           {/* charts */}
 
           {/* Apps */}
+
+          {/* management */}
+          <Route path="/admin/product/new" element={<NewProduct />} />
+          <Route path="/admin/transaction/:id" element={<NewProduct />} />
         </Routes>
       </Suspense>
     </Router>
