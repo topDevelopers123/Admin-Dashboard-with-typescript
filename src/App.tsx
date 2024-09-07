@@ -32,6 +32,7 @@ function App() {
 
           {/* management */}
           <Route path="/admin/product/new" element={<NewProduct />} />
+          <Route path="/admin/product/:id" element={<ProductManagement />} />
           <Route path="/admin/transaction/:id" element={<NewProduct />} />
         </Routes>
       </Suspense>
