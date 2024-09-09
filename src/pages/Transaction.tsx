@@ -12,9 +12,10 @@ interface DataType {
   status: ReactElement;
   action: ReactElement;
 }
+
 const columns: Column<DataType>[] = [
   {
-    Header: "User",
+    Header: "Avatar",
     accessor: "user",
   },
   {
@@ -69,10 +70,16 @@ const arr: DataType[] = [
 function Transaction() {
   const [data] = useState<DataType[]>(arr);
   const Table = useCallback(
-    TableHOC<DataType>(columns, data, "dashboard-product-box", "Transactions", true),
+    TableHOC<DataType>(
+      columns,
+      data,
+      "dashboard-product-box",
+      "Transactions",
+      true
+    ),
     []
   );
-  
+
   return (
     <div className="adminContainer">
       <AdminSidebar />
