@@ -2,6 +2,7 @@
 @import "mixin";
 @import "dashboard";
 @import "products";
+@import "chart";
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -129,10 +130,10 @@ a {
     }
   }
 }
-.table-pagination{
+.table-pagination {
   @include flex;
   padding: 2rem;
-  >button{
+  > button {
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
@@ -140,7 +141,7 @@ a {
     cursor: pointer;
     background-color: rgba(0, 115, 225);
     color: white;
-    &:disabled{
+    &:disabled {
       background-color: rgba(0, 115, 225, 0.1);
       cursor: not-allowed;
     }
